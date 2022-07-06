@@ -17,6 +17,11 @@
 		C248900F2875A61E00AAB1AB /* NearByVenuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248900E2875A61E00AAB1AB /* NearByVenuesTests.swift */; };
 		C24890192875A61E00AAB1AB /* NearByVenuesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24890182875A61E00AAB1AB /* NearByVenuesUITests.swift */; };
 		C248901B2875A61E00AAB1AB /* NearByVenuesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248901A2875A61E00AAB1AB /* NearByVenuesUITestsLaunchTests.swift */; };
+		C24890292875B7ED00AAB1AB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24890282875B7ED00AAB1AB /* Endpoint.swift */; };
+		C248902B2875B9A400AAB1AB /* FoursquareEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248902A2875B9A400AAB1AB /* FoursquareEndpoint.swift */; };
+		C248902E2875BBCE00AAB1AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248902D2875BBCE00AAB1AB /* Constants.swift */; };
+		C24890312875BDB400AAB1AB /* FoursquareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24890302875BDB400AAB1AB /* FoursquareResponse.swift */; };
+		C24890332875BDFF00AAB1AB /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24890322875BDFF00AAB1AB /* NetworkEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		C24890142875A61E00AAB1AB /* NearByVenuesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearByVenuesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C24890182875A61E00AAB1AB /* NearByVenuesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVenuesUITests.swift; sourceTree = "<group>"; };
 		C248901A2875A61E00AAB1AB /* NearByVenuesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVenuesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C24890282875B7ED00AAB1AB /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		C248902A2875B9A400AAB1AB /* FoursquareEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareEndpoint.swift; sourceTree = "<group>"; };
+		C248902D2875BBCE00AAB1AB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C24890302875BDB400AAB1AB /* FoursquareResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareResponse.swift; sourceTree = "<group>"; };
+		C24890322875BDFF00AAB1AB /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,8 @@
 		C2488FF32875A61C00AAB1AB /* NearByVenues */ = {
 			isa = PBXGroup;
 			children = (
+				C248902F2875BD8700AAB1AB /* DataModel */,
+				C248902C2875BBBC00AAB1AB /* Helpers */,
 				C24890272875AE3D00AAB1AB /* Network */,
 				C2488FF42875A61C00AAB1AB /* AppDelegate.swift */,
 				C2488FF62875A61C00AAB1AB /* SceneDelegate.swift */,
@@ -134,8 +146,27 @@
 		C24890272875AE3D00AAB1AB /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				C24890282875B7ED00AAB1AB /* Endpoint.swift */,
+				C248902A2875B9A400AAB1AB /* FoursquareEndpoint.swift */,
+				C24890322875BDFF00AAB1AB /* NetworkEngine.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		C248902C2875BBBC00AAB1AB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C248902D2875BBCE00AAB1AB /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C248902F2875BD8700AAB1AB /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C24890302875BDB400AAB1AB /* FoursquareResponse.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +304,11 @@
 				C2488FF92875A61C00AAB1AB /* ViewController.swift in Sources */,
 				C2488FF52875A61C00AAB1AB /* AppDelegate.swift in Sources */,
 				C2488FF72875A61C00AAB1AB /* SceneDelegate.swift in Sources */,
+				C248902E2875BBCE00AAB1AB /* Constants.swift in Sources */,
+				C24890332875BDFF00AAB1AB /* NetworkEngine.swift in Sources */,
+				C24890292875B7ED00AAB1AB /* Endpoint.swift in Sources */,
+				C248902B2875B9A400AAB1AB /* FoursquareEndpoint.swift in Sources */,
+				C24890312875BDB400AAB1AB /* FoursquareResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
