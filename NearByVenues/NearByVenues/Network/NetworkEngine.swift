@@ -7,12 +7,15 @@
 
 import Foundation
 
-class NetworkEngine {
+protocol Networkable {
+    func request<T: Codable>(endpoint: FoursquareEndpoint, completion: @escaping (Result<T, Error>) -> ())
+}
+extension Networkable {
     /// Excute the web call and decode the JSON response into the Codable object provided
     ///  - Parameters:
     ///   - endpoint: the endpoint to make the HTTP request against
     ///   - completion: the JSON response converted to the provided Codable object, if successful, or failure
-    class func request<T: Codable>(endpoint: Endpoint, completion: @escaping (Result<T, Error>) -> ()) {
+    func request<T: Codable>(endpoint: FoursquareEndpoint, completion: @escaping (Result<T, Error>) -> ()) {
         var components = URLComponents()
         components.scheme = endpoint.scheme
         components.host = endpoint.baseURL
@@ -32,7 +35,6 @@ class NetworkEngine {
                 print(error?.localizedDescription ?? "Unkown error")
                 return
             }
-            print(data)
             guard response != nil, let data = data else { return }
             
             DispatchQueue.global().async {
@@ -46,4 +48,6 @@ class NetworkEngine {
         }
         dataTask.resume()
     }
+}
+class NetworkEngine: Networkable {
 }

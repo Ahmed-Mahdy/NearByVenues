@@ -11,5 +11,5 @@ import Foundation
 
 class constants {
     // this should be stored in key chain
-    static let token = "fsq3u1Y+6Z6UIEvR6pIcyYfN6GOWBs6phzngJYGVqU7OLCg="
+    static let token = "fsq3jU2AxAnD0AiQfcJe3XFTjyyN56SaEAHWzhBPrnZfk7M="
 }

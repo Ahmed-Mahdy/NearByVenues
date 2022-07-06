@@ -8,18 +8,18 @@
 import Foundation
 
 struct FoursquareResponse: Codable {
-    let results: [Place]
+    let results: [Place]?
 }
 
 struct Place: Codable {
     let fsqID: String
-    let distance: Int
-    let link: String
     let name: String
+//    let location: Location?
+    var imageURL: String?
     
     enum CodingKeys: String, CodingKey {
         case fsqID = "fsq_id"
-        case distance, link, name
+        case name
     }
 }
 struct Location: Codable {
