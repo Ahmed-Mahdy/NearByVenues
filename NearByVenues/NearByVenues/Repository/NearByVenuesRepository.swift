@@ -9,7 +9,7 @@ import Foundation
 
 class NearByVenuesRepository: Repository {
     let provider: Networkable
-    var dataManager = coreDataManager()
+    var dataManager: DataManager = PlacesDataManager()
     
     init(provider: Networkable = NetworkEngine()) {
         self.provider = provider
@@ -30,8 +30,7 @@ class NearByVenuesRepository: Repository {
                         if let places = self.dataManager.getSavedPlaces() {
                             completion(.success(places))
                         } else {
-                            let error = NSError(domain: "", code: 200, userInfo: [NSLocalizedDescriptionKey:"no data recieved and no saved data"])
-                            completion(.failure(error))
+                            completion(.failure(RequestError.notFound))
                         }
                     }
                 case .failure(let error):
@@ -57,6 +56,7 @@ class NearByVenuesRepository: Repository {
                     print(error)
                 }
                 if index == places.count - 1 {
+                    self.dataManager.deleteAllRecords()
                     self.dataManager.save(places: places)
                     completion(.success(places))
                 }

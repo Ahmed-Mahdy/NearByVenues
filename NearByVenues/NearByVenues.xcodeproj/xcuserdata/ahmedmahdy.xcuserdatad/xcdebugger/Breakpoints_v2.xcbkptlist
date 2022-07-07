@@ -23,81 +23,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "46E5DEF2-E2F0-4CFE-9836-DB975496939B"
+            uuid = "08D645BB-EC2D-4821-A30B-D939FA4E63E7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NearByVenues/Helpers/coreDataManager.swift"
+            filePath = "NearByVenues/CoreData/PlacesDataManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "save(places:)"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "deleteAllRecords()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6926E330-FBC0-49EA-8ACF-C579862D755C"
-            shouldBeEnabled = "Yes"
+            uuid = "97E67BDD-10B6-40D5-A6D5-CB517836942C"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NearByVenues/Repository/NearByVenuesRepository.swift"
+            filePath = "NearByVenuesTests/RepositoryTest/RepositoryTest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "getNearByVenues(latitude:longitude:completion:)"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "testGetPlaces()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "77DE62D6-2738-48C0-8A2D-A3076970367D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NearByVenues/Repository/NearByVenuesRepository.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "getNearByVenues(latitude:longitude:completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "77DE62D6-2738-48C0-8A2D-A3076970367D - 8c48ea1490519e1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;NearByVenues.FoursquareResponse, Swift.Error&gt;) -&gt; () in NearByVenues.NearByVenuesRepository.getNearByVenues(latitude: Swift.Double, longitude: Swift.Double, completion: (Swift.Result&lt;Swift.Array&lt;NearByVenues.Place&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "NearByVenues"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmedmahdy/ArtDevelop/NearByVenues/NearByVenues/NearByVenues/Repository/NearByVenuesRepository.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "718">
-               </Location>
-               <Location
-                  uuid = "77DE62D6-2738-48C0-8A2D-A3076970367D - 8c48ea1490519e1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;NearByVenues.FoursquareResponse, Swift.Error&gt;) -&gt; () in NearByVenues.NearByVenuesRepository.getNearByVenues(latitude: Swift.Double, longitude: Swift.Double, completion: (Swift.Result&lt;Swift.Array&lt;NearByVenues.Place&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "NearByVenues"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmedmahdy/ArtDevelop/NearByVenues/NearByVenues/NearByVenues/Repository/NearByVenuesRepository.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "752">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

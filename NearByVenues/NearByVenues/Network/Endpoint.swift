@@ -24,3 +24,20 @@ protocol Endpoint {
     /// Example: GET
     var method: String { get }
 }
+
+extension Endpoint {
+    func creatRequest() -> URLRequest? {
+        var components = URLComponents()
+        components.scheme = scheme
+        components.host = baseURL
+        components.path = path
+        components.queryItems = parameters
+        
+        guard let url = components.url else { return nil }
+        
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = method
+        urlRequest.allHTTPHeaderFields = headers
+        return urlRequest
+    }
+}

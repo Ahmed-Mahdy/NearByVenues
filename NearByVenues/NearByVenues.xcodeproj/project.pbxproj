@@ -14,22 +14,29 @@
 		C2488FFF2875A61C00AAB1AB /* NearByVenues.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2488FFD2875A61C00AAB1AB /* NearByVenues.xcdatamodeld */; };
 		C24890012875A61E00AAB1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C24890002875A61E00AAB1AB /* Assets.xcassets */; };
 		C24890042875A61E00AAB1AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24890022875A61E00AAB1AB /* LaunchScreen.storyboard */; };
-		C248900F2875A61E00AAB1AB /* NearByVenuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248900E2875A61E00AAB1AB /* NearByVenuesTests.swift */; };
+		C248900F2875A61E00AAB1AB /* CoreDataManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248900E2875A61E00AAB1AB /* CoreDataManagerTest.swift */; };
 		C24890192875A61E00AAB1AB /* NearByVenuesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24890182875A61E00AAB1AB /* NearByVenuesUITests.swift */; };
 		C248901B2875A61E00AAB1AB /* NearByVenuesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248901A2875A61E00AAB1AB /* NearByVenuesUITestsLaunchTests.swift */; };
 		C24890292875B7ED00AAB1AB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24890282875B7ED00AAB1AB /* Endpoint.swift */; };
 		C248902B2875B9A400AAB1AB /* FoursquareEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248902A2875B9A400AAB1AB /* FoursquareEndpoint.swift */; };
-		C248902E2875BBCE00AAB1AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248902D2875BBCE00AAB1AB /* Constants.swift */; };
 		C24890312875BDB400AAB1AB /* FoursquareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24890302875BDB400AAB1AB /* FoursquareResponse.swift */; };
 		C24890332875BDFF00AAB1AB /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24890322875BDFF00AAB1AB /* NetworkEngine.swift */; };
 		C24890362875E2DA00AAB1AB /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24890352875E2DA00AAB1AB /* Repository.swift */; };
 		C24890382875E3CB00AAB1AB /* NearByVenuesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24890372875E3CB00AAB1AB /* NearByVenuesRepository.swift */; };
-		C248903E2875E73200AAB1AB /* NearByViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248903D2875E73200AAB1AB /* NearByViewModel.swift */; };
+		C248903E2875E73200AAB1AB /* NearByPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248903D2875E73200AAB1AB /* NearByPresenter.swift */; };
 		C24890412875F07700AAB1AB /* UIImageView+LoadRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24890402875F07700AAB1AB /* UIImageView+LoadRemote.swift */; };
 		C24890432875F1EF00AAB1AB /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24890422875F1EF00AAB1AB /* Images.swift */; };
 		C24890452876147C00AAB1AB /* VenuesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24890442876147C00AAB1AB /* VenuesTableViewCell.swift */; };
 		C24890472876148500AAB1AB /* VenuesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C24890462876148500AAB1AB /* VenuesTableViewCell.xib */; };
-		C2489049287626A700AAB1AB /* coreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2489048287626A700AAB1AB /* coreDataManager.swift */; };
+		C2489049287626A700AAB1AB /* PlacesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2489048287626A700AAB1AB /* PlacesDataManager.swift */; };
+		C248904C2877023800AAB1AB /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248904B2877023800AAB1AB /* CoreDataStack.swift */; };
+		C248904E2877069800AAB1AB /* CoreDataMockStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248904D2877069800AAB1AB /* CoreDataMockStack.swift */; };
+		C248905428770CD000AAB1AB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248905328770CD000AAB1AB /* LocationManager.swift */; };
+		C2489056287759BB00AAB1AB /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2489055287759BB00AAB1AB /* RequestError.swift */; };
+		C248905928776B3D00AAB1AB /* RepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248905828776B3D00AAB1AB /* RepositoryTest.swift */; };
+		C248905B28776B5000AAB1AB /* MockedNetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248905A28776B5000AAB1AB /* MockedNetworkEngine.swift */; };
+		C248905D28776C4F00AAB1AB /* PlacesResultMock.json in Resources */ = {isa = PBXBuildFile; fileRef = C248905C28776C4F00AAB1AB /* PlacesResultMock.json */; };
+		C248905F2877738E00AAB1AB /* MockedDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C248905E2877738E00AAB1AB /* MockedDataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,23 +67,30 @@
 		C24890032875A61E00AAB1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C24890052875A61E00AAB1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C248900A2875A61E00AAB1AB /* NearByVenuesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearByVenuesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C248900E2875A61E00AAB1AB /* NearByVenuesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVenuesTests.swift; sourceTree = "<group>"; };
+		C248900E2875A61E00AAB1AB /* CoreDataManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerTest.swift; sourceTree = "<group>"; };
 		C24890142875A61E00AAB1AB /* NearByVenuesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearByVenuesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C24890182875A61E00AAB1AB /* NearByVenuesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVenuesUITests.swift; sourceTree = "<group>"; };
 		C248901A2875A61E00AAB1AB /* NearByVenuesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVenuesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C24890282875B7ED00AAB1AB /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		C248902A2875B9A400AAB1AB /* FoursquareEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareEndpoint.swift; sourceTree = "<group>"; };
-		C248902D2875BBCE00AAB1AB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C24890302875BDB400AAB1AB /* FoursquareResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareResponse.swift; sourceTree = "<group>"; };
 		C24890322875BDFF00AAB1AB /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
 		C24890352875E2DA00AAB1AB /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		C24890372875E3CB00AAB1AB /* NearByVenuesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVenuesRepository.swift; sourceTree = "<group>"; };
-		C248903D2875E73200AAB1AB /* NearByViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByViewModel.swift; sourceTree = "<group>"; };
+		C248903D2875E73200AAB1AB /* NearByPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByPresenter.swift; sourceTree = "<group>"; };
 		C24890402875F07700AAB1AB /* UIImageView+LoadRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadRemote.swift"; sourceTree = "<group>"; };
 		C24890422875F1EF00AAB1AB /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		C24890442876147C00AAB1AB /* VenuesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesTableViewCell.swift; sourceTree = "<group>"; };
 		C24890462876148500AAB1AB /* VenuesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VenuesTableViewCell.xib; sourceTree = "<group>"; };
-		C2489048287626A700AAB1AB /* coreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreDataManager.swift; sourceTree = "<group>"; };
+		C2489048287626A700AAB1AB /* PlacesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDataManager.swift; sourceTree = "<group>"; };
+		C248904B2877023800AAB1AB /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		C248904D2877069800AAB1AB /* CoreDataMockStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMockStack.swift; sourceTree = "<group>"; };
+		C248905328770CD000AAB1AB /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C2489055287759BB00AAB1AB /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		C248905828776B3D00AAB1AB /* RepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTest.swift; sourceTree = "<group>"; };
+		C248905A28776B5000AAB1AB /* MockedNetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedNetworkEngine.swift; sourceTree = "<group>"; };
+		C248905C28776C4F00AAB1AB /* PlacesResultMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PlacesResultMock.json; sourceTree = "<group>"; };
+		C248905E2877738E00AAB1AB /* MockedDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedDataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,19 +141,18 @@
 		C2488FF32875A61C00AAB1AB /* NearByVenues */ = {
 			isa = PBXGroup;
 			children = (
-				C248903F2875F05C00AAB1AB /* Extensions */,
-				C24890272875AE3D00AAB1AB /* Network */,
-				C248902C2875BBBC00AAB1AB /* Helpers */,
 				C24890392875E6F300AAB1AB /* Features */,
+				C248903F2875F05C00AAB1AB /* Extensions */,
 				C24890342875E1AF00AAB1AB /* Repository */,
 				C248902F2875BD8700AAB1AB /* DataModel */,
+				C24890272875AE3D00AAB1AB /* Network */,
+				C248904A2877020E00AAB1AB /* CoreData */,
 				C2488FF42875A61C00AAB1AB /* AppDelegate.swift */,
 				C2488FF62875A61C00AAB1AB /* SceneDelegate.swift */,
 				C2488FFA2875A61C00AAB1AB /* Main.storyboard */,
 				C24890002875A61E00AAB1AB /* Assets.xcassets */,
 				C24890022875A61E00AAB1AB /* LaunchScreen.storyboard */,
 				C24890052875A61E00AAB1AB /* Info.plist */,
-				C2488FFD2875A61C00AAB1AB /* NearByVenues.xcdatamodeld */,
 			);
 			path = NearByVenues;
 			sourceTree = "<group>";
@@ -147,7 +160,8 @@
 		C248900D2875A61E00AAB1AB /* NearByVenuesTests */ = {
 			isa = PBXGroup;
 			children = (
-				C248900E2875A61E00AAB1AB /* NearByVenuesTests.swift */,
+				C248905728776B0F00AAB1AB /* RepositoryTest */,
+				C248905128770AF800AAB1AB /* CoreDataTest */,
 			);
 			path = NearByVenuesTests;
 			sourceTree = "<group>";
@@ -167,17 +181,9 @@
 				C24890282875B7ED00AAB1AB /* Endpoint.swift */,
 				C248902A2875B9A400AAB1AB /* FoursquareEndpoint.swift */,
 				C24890322875BDFF00AAB1AB /* NetworkEngine.swift */,
+				C2489055287759BB00AAB1AB /* RequestError.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		C248902C2875BBBC00AAB1AB /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				C248902D2875BBCE00AAB1AB /* Constants.swift */,
-				C2489048287626A700AAB1AB /* coreDataManager.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		C248902F2875BD8700AAB1AB /* DataModel */ = {
@@ -201,6 +207,7 @@
 		C24890392875E6F300AAB1AB /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				C248905228770CC200AAB1AB /* LocationManager */,
 				C248903A2875E6FE00AAB1AB /* NearBy */,
 			);
 			path = Features;
@@ -210,17 +217,17 @@
 			isa = PBXGroup;
 			children = (
 				C248903C2875E70C00AAB1AB /* View */,
-				C248903B2875E70600AAB1AB /* ViewModel */,
+				C248903B2875E70600AAB1AB /* Presenter */,
 			);
 			path = NearBy;
 			sourceTree = "<group>";
 		};
-		C248903B2875E70600AAB1AB /* ViewModel */ = {
+		C248903B2875E70600AAB1AB /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				C248903D2875E73200AAB1AB /* NearByViewModel.swift */,
+				C248903D2875E73200AAB1AB /* NearByPresenter.swift */,
 			);
-			path = ViewModel;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		C248903C2875E70C00AAB1AB /* View */ = {
@@ -239,6 +246,44 @@
 				C24890402875F07700AAB1AB /* UIImageView+LoadRemote.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C248904A2877020E00AAB1AB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C2488FFD2875A61C00AAB1AB /* NearByVenues.xcdatamodeld */,
+				C2489048287626A700AAB1AB /* PlacesDataManager.swift */,
+				C248904B2877023800AAB1AB /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		C248905128770AF800AAB1AB /* CoreDataTest */ = {
+			isa = PBXGroup;
+			children = (
+				C248900E2875A61E00AAB1AB /* CoreDataManagerTest.swift */,
+				C248904D2877069800AAB1AB /* CoreDataMockStack.swift */,
+			);
+			path = CoreDataTest;
+			sourceTree = "<group>";
+		};
+		C248905228770CC200AAB1AB /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				C248905328770CD000AAB1AB /* LocationManager.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		C248905728776B0F00AAB1AB /* RepositoryTest */ = {
+			isa = PBXGroup;
+			children = (
+				C248905C28776C4F00AAB1AB /* PlacesResultMock.json */,
+				C248905828776B3D00AAB1AB /* RepositoryTest.swift */,
+				C248905A28776B5000AAB1AB /* MockedNetworkEngine.swift */,
+				C248905E2877738E00AAB1AB /* MockedDataStore.swift */,
+			);
+			path = RepositoryTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +401,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C248905D28776C4F00AAB1AB /* PlacesResultMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,15 +423,17 @@
 				C2488FF92875A61C00AAB1AB /* NearByVenuesViewController.swift in Sources */,
 				C2488FF52875A61C00AAB1AB /* AppDelegate.swift in Sources */,
 				C2488FF72875A61C00AAB1AB /* SceneDelegate.swift in Sources */,
-				C248902E2875BBCE00AAB1AB /* Constants.swift in Sources */,
 				C24890332875BDFF00AAB1AB /* NetworkEngine.swift in Sources */,
 				C24890292875B7ED00AAB1AB /* Endpoint.swift in Sources */,
 				C24890452876147C00AAB1AB /* VenuesTableViewCell.swift in Sources */,
+				C248905428770CD000AAB1AB /* LocationManager.swift in Sources */,
+				C2489056287759BB00AAB1AB /* RequestError.swift in Sources */,
 				C24890432875F1EF00AAB1AB /* Images.swift in Sources */,
 				C24890362875E2DA00AAB1AB /* Repository.swift in Sources */,
 				C248902B2875B9A400AAB1AB /* FoursquareEndpoint.swift in Sources */,
-				C248903E2875E73200AAB1AB /* NearByViewModel.swift in Sources */,
-				C2489049287626A700AAB1AB /* coreDataManager.swift in Sources */,
+				C248903E2875E73200AAB1AB /* NearByPresenter.swift in Sources */,
+				C248904C2877023800AAB1AB /* CoreDataStack.swift in Sources */,
+				C2489049287626A700AAB1AB /* PlacesDataManager.swift in Sources */,
 				C24890312875BDB400AAB1AB /* FoursquareResponse.swift in Sources */,
 				C24890412875F07700AAB1AB /* UIImageView+LoadRemote.swift in Sources */,
 				C24890382875E3CB00AAB1AB /* NearByVenuesRepository.swift in Sources */,
@@ -396,7 +444,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C248900F2875A61E00AAB1AB /* NearByVenuesTests.swift in Sources */,
+				C248900F2875A61E00AAB1AB /* CoreDataManagerTest.swift in Sources */,
+				C248904E2877069800AAB1AB /* CoreDataMockStack.swift in Sources */,
+				C248905928776B3D00AAB1AB /* RepositoryTest.swift in Sources */,
+				C248905F2877738E00AAB1AB /* MockedDataStore.swift in Sources */,
+				C248905B28776B5000AAB1AB /* MockedNetworkEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

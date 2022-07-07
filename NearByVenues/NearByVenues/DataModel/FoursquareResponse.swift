@@ -14,7 +14,6 @@ struct FoursquareResponse: Codable {
 struct Place: Codable {
     let fsqID: String
     let name: String
-//    let location: Location?
     var imageURL: String?
     
     enum CodingKeys: String, CodingKey {

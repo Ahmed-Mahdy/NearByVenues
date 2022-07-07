@@ -14,7 +14,6 @@ extension UIImageView {
         guard let imageURL = URL(string: imageURL) else {
             return
         }
-
         let cache =  URLCache.shared
         let request = URLRequest(url: imageURL)
         DispatchQueue.global(qos: .userInitiated).async {
