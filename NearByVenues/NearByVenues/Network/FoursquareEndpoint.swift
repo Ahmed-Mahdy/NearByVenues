@@ -35,7 +35,7 @@ enum FoursquareEndpoint: Endpoint {
     }
     var headers: [String : String] {
         // this should not be here but only for task purpose
-        let token = "fsq3jU2AxAnD0AiQfcJe3XFTjyyN56SaEAHWzhBPrnZfk7M="
+        let token = "(yourToken)"
         switch self {
         default:
             return ["Accept": "application/json",
